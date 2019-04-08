@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<title>Waldschach</title>
+	<meta charset="utf-8">
+	<link href="webstyle.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+//Gesamtanzahl Berechnung und Ausgabe
+function myFunction(){
+    var pferdnum = parseInt(document.getElementById("pferdnum").value);
+    var bauernum = parseInt(document.getElementById("bauernum").value);
+    var damenum = parseInt(document.getElementById("damenum").value);
+    var koenignum = parseInt(document.getElementById("koenignum").value);
+    var laeufernum = parseInt(document.getElementById("laeufernum").value);
+    document.getElementById("output").innerHTML =pferdnum + bauernum + laeufernum +damenum + koenignum;
+}
+function speichern(){
+        location.reload();
+}
+</script>
+</head>
+
+<body>
+    
+	<div id="leiste">
+              
+        <img src="Waldschachlogo4.png" alt="Waldschach Logo" style="width:25%;height:auto;border:0;margin-left: 150px;margin-top: -40px;">
+        
+        <p id="menu">
+        
+            <a href="index.html">Home</a>
+            <a href="Erklaerung.html">Erklärung</a>
+            <a href="Figuren.html">Figuren</a>
+        
+        </p>
+    
+    </div>
+   
+
+<div>
+    <!-- This script segment displays an image from the array -->
+    <script type="text/javascript">getRandomImage(random_images_array, 'images/')
+    </script>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="Erklaerung.html">
+<img src="images/fragezeichen.png.jpg" alt="Hilfe" style="width:2%;height:auto;border:0;margin-left: 1450px;margin-top: 0px;">
+</a>
+<br>
+<img src="images/Pferd_bearbeitet2.png" alt="Schach-Pferd" style="width:30%;height:auto;border:0;margin-left: -170px;margin-top: 0px;"> 
+<img src="images/Bauer_bearbeitet2.png" alt="Schach-Bauer" style="width:30%;height:auto;border:0;margin-left: -180px;margin-top: 0px;">
+<img src="images/Dame_bearbeitet2.png" alt="Schach-Dame" style="width:30%;height:auto;border:0;margin-left: -205px;margin-top: 0px;">
+<img src="images/Koenig_bearbeitet2.png" alt="Schach-Koenig" style="width:30%;height:auto;border:0;margin-left: -205px;margin-top: 0px;">
+<img src="images/Laeufer_bearbeitet2.png" alt="Schach-Laeufer" style="width:30%;height:auto;border:0;margin-left: -205px;margin-top: 0px;">
+
+
+<input id="pferdnum" type="number" min="0" step="1" value="0">
+&nbsp;
+&nbsp;
+<input id="bauernum" type="number" min="0" step="1" value="0"> 
+&nbsp;
+&nbsp;
+<input id="damenum" type="number" min="0" step="1" value="0"> 
+&nbsp;
+&nbsp;
+<input id="koenignum" type="number" min="0" step="1" value="0"> 
+&nbsp;
+&nbsp;
+<input id="laeufernum" type="number" min="0" step="1" value="0"> 
+&nbsp;
+<button onclick="speichern()">Speichern</button>
+<p>     </p>
+<p id="output" style="font-size:1.8em; text-align: center"></p>
+
+
+
+<button onclick="eingabeFunction()">Eingabe</button>
+&nbsp;
+<button onclick="ausgabeFunction()">Ausgabe</button>
+
+<p id="demo"></p>
+<p id="try"></p>
+    
+    
+<script src="team.js"></script> 
+    
+
+	
+</body>
+
+</html>

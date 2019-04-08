@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Demo</title>
+<style type="text/css">
+body { font: 14px/1.3 verdana, arial, helvetica, sans-serif; }
+p { max-width: 60em; }
+img{
+    height: 180px;
+    width: auto;
+    }
+
+/* so linked image won't have border */
+a img { border:none; }
+</style>
+<script type="text/javascript">
+// place your images in this array
+
+var random_images_array = ['Pferd.jpg', 'Dame.jpg', 'Bauer.jpg'];
+    
+function getRandomImage(imgAr, path) {
+    path = path || 'images/'; // default path here
+    var num = Math.floor( Math.random() * imgAr.length );
+    var img = imgAr[ num ];
+    var imgStr = '<img src="' + path + img + '" alt = "">';
+    document.write(imgStr); document.close();
+}
+
+function myFunction(){
+    var pferdnum = parseInt(document.getElementById("pferdnum").value);
+    var bauernum = parseInt(document.getElementById("bauernum").value);
+    var damenum = parseInt(document.getElementById("damenum").value);
+    var könignum = parseInt(document.getElementById("könignum").value);
+    var läufernum = parseInt(document.getElementById("läufernum").value);
+    document.getElementById("output").innerHTML = pferdnum + bauernum + läufernum +damenum + könignum;
+}
+
+</script>
+</head>
+<body>
+    
+
+<div>
+    <!-- This script segment displays an image from the array -->
+    <script type="text/javascript">getRandomImage(random_images_array, 'images/')
+    </script>
+</div>
+
+<br>
+<br>
+<br>
+
+<input id="pferdnum" type="number" min="0" step="1" >
+&nbsp;
+&nbsp;
+<input id="bauernum" type="number" min="0" step="1" > 
+&nbsp;
+&nbsp;
+<input id="damenum" type="number" min="0" step="1" > 
+&nbsp;
+&nbsp;
+<input id="könignum" type="number" min="0" step="1" > 
+&nbsp;
+&nbsp;
+<input id="läufernum" type="number" min="0" step="1" > 
+&nbsp;
+<button onclick="myFunction()">Berechnen</button>
+    
+<p id="output"></p>
+
+
+<script>           
+    
+    var pferdnum = parseInt(document.getElementById("pferdnum").value);
+    var bauernum = parseInt(document.getElementById("bauernum").value);
+    var damenum = parseInt(document.getElementById("damenum").value);
+    var könignum = parseInt(document.getElementById("könignum").value);
+    var läufernum = parseInt(document.getElementById("läufernum").value);
+    var gesamt = pferdnum + bauernum + läufernum +damenum + könignum;
+
+var a = 0;
+for(i=0;i<gesamt;i++){
+    document.write('<input id="namen[a++]" type="text">');
+    var namis = namen [a];
+    document.close();
+} 
+document.write(namis)    
+document.write('<br/>');
+    
+for(i=0;i<gesamt;i++){
+    
+}
+var pferdzahl = parseInt(document.getElementById("pferdnum").value);
+for(i=0;i<pferdzahl;i++){
+    var imgpf = '<img src="images/Pferd.jpg">';
+    document.write(imgpf);
+    document.write('<br/>');
+    document.close();
+}    
+
+</script>   
+  
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<title>Waldschach</title>
+	<meta charset="utf-8">
+	<link href="webstyle.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+
+function myFunction(){
+    var pferdnum = parseInt(document.getElementById("pferdnum").value);
+    var bauernum = parseInt(document.getElementById("bauernum").value);
+    var damenum = parseInt(document.getElementById("damenum").value);
+    var koenignum = parseInt(document.getElementById("koenignum").value);
+    var laeufernum = parseInt(document.getElementById("laeufernum").value);
+    document.getElementById("output").innerHTML = pferdnum + bauernum + laeufernum +damenum + koenignum;
+}
+</script>
+</head>
+
+<body>
+    
+	<div id="leiste">
+              
+        <img src="Waldschachlogo4.png" alt="Waldschach Logo" style="width:25%;height:auto;border:0;margin-left: 150px;margin-top: -40px;">
+        
+        <p id="menu">
+        
+            <a href="index.html">Home</a>
+            <a href="Erklaerung.html">Erklärung</a>
+            <a href="#">Team/Feldauswahl</a>
+            <a href="Figuren.html">Figuren</a>
+            <a href="#">Impressum</a>
+        
+        </p>
+    
+    </div>
+   
+
+<div>
+    <!-- This script segment displays an image from the array -->
+    <script type="text/javascript">getRandomImage(random_images_array, 'images/')
+    </script>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    
+
+<input id="pferdnum" type="number" min="0" step="1" value="0">
+&nbsp;
+&nbsp;
+<input id="bauernum" type="number" min="0" step="1" value="0"> 
+&nbsp;
+&nbsp;
+<input id="damenum" type="number" min="0" step="1" value="0"> 
+&nbsp;
+&nbsp;
+<input id="koenignum" type="number" min="0" step="1" value="0"> 
+&nbsp;
+&nbsp;
+<input id="laeufernum" type="number" min="0" step="1" value="0"> 
+&nbsp;
+<button onclick="myFunction()">Berechnen</button>
+    
+<p id="output"></p>
+
+
+<button onclick="eingabeFunction()">Eingabe</button> 
+<button onclick="ausgabeFunction()">Ausgabe</button> 
+
+<p id="demo"></p>
+    
+    
+<script src="team.js"></script> 
+    
+
+	
+</body>
+
+</html>

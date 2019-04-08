@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<title>Waldschach</title>
+	<meta charset="utf-8">
+	<link href="webstyle.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+  function toggle(id){
+    var e = document.getElementById(id);
+     
+    if (e.style.display == "none"){
+       e.style.display = "";
+    } else {
+       e.style.display = "none";
+    }
+  }
+</script>
+<style> 
+    #beschreibung1{
+        margin-top:120px;
+        text-align: center;
+        font-size:20px;
+    }
+    .beschreibung2{
+        margin-top:30px;
+        text-align: center;
+        font-size:20px;
+    }
+    .klappe{
+        color:green;
+        font-weight: bold;
+        font-size: 20px;
+        background-color: lightsteelblue;
+        padding-top:20px;
+        padding-bottom:20px;
+        padding-right:500px;
+        padding-left:500px;
+    }
+
+    ul.figuren{
+        list-style-type: circle;
+        text-align: left;
+    }
+    ul.anleitung{
+        list-style-type: none;
+        text-align: left;
+    }
+    ol.ziel{
+        list-style-type: upper-roman;
+        text-align: left;
+    }
+    
+</style>
+</head>
+
+
+<body>
+	<div id="leiste">
+            
+        <img src="Waldschachlogo4.png" alt="Waldschach Logo" style="width:25%;height:auto;border:0;margin-left: 150px;margin-top: -40px;">
+        
+        <p id="menu">
+        
+            <a href="index.html">Home</a>
+            <a href="Erklaerung.html">Erklärung</a>
+            <a href="Figuren.html">Figuren</a>
+        
+        </p>
+    </div>
+<div id="beschreibung1">
+<div class="klappe"><span style="cursor:pointer;" onclick="document.getElementById('text1').style.display='block';document.getElementById('an1').style.display='none';document.getElementById('zu1').style.display='block'" id="an1" style="display: block">WORUM GEHT‘S?</span> 
+<span onclick="document.getElementById('text1').style.display='none';document.getElementById('an1').style.display='block';document.getElementById('zu1').style.display='none'" id="zu1" style="display: none;cursor:pointer">WORUM GEHT‘S?</span></div> 
+<div id="text1" style="display: none; margin-left:50px; margin-right:50px; margin-top:5px">Jede Mannschaft hat eine eigene Basis und eine Fahne. Ziel des Spiels ist es, die gegnerische Fahne zu entwenden und in die eigene Basis zu bringen, während gleichzeitig die eigene Fahne beschützt werden muss. Wird ein gegnerischer Spieler gefangen, so muss er, je nach Spielfigur, entweder zurück in sein eigenes Spielfeld oder ganz zurück zum König</div>
+    </div>    
+
+    
+<div class="beschreibung2">
+<div class="klappe"><span style="cursor:pointer;" onclick="document.getElementById('text2').style.display='block';document.getElementById('an2').style.display='none';document.getElementById('zu2').style.display='block'" id="an2" style="display: block">WIE GEWINNE ICH DAS SPIEL?</span> 
+<span onclick="document.getElementById('text2').style.display='none';document.getElementById('an2').style.display='block';document.getElementById('zu2').style.display='none'" id="zu2" style="display: none;cursor:pointer">WIE GEWINNE ICH DAS SPIEL?</span></div> 
+<div id="text2" style="display: none; margin-left:50px; margin-right:50px; margin-top:5px"><ol class="ziel"><strong>Waldschach bietet 2 Möglichkeiten es zu Spielen:</strong>
+<li> Wer nach einer zuvor festgelegten Spielzeit am meisten Fahnen in seiner Basis hat gewinnt.</li>
+<li> Wer als erster von allen Mannschaften eine Fahne gestohlen hat gewinnt (nur ab einer Anzahl von 3 Mannschaften möglich)</li></ol></div> 
+</div>
+    
+
+<div class="beschreibung2">
+<div class="klappe"><span style="cursor:pointer;" onclick="document.getElementById('text3').style.display='block';document.getElementById('an3').style.display='none';document.getElementById('zu3').style.display='block'" id="an3" style="display: block">WAS SIND DIE UNTERSCHIEDE ZUM NORMALEN CHAPTER THE FLAG?</span> 
+<span onclick="document.getElementById('text3').style.display='none';document.getElementById('an3').style.display='block';document.getElementById('zu3').style.display='none'" id="zu3" style="display: none;cursor:pointer">WAS SIND DIE UNTERSCHIEDE ZUM NORMALEN CHAPTER THE FLAG?</span></div> 
+<div id="text3" style="display: none; margin-left:50px; margin-right:50px; margin-top:5px">Das Spiel ist in einzelne Runde eingeteilt. In diesen Runden ist jedem Teamspieler eine gewisse Spielfigur zugeteilt, welche gewisse Fähigkeiten besitzt. Nach einer bestimmten Rundendauer (z.B. 5 Minuten) treffen sich wieder alle Teamspieler in der Basis um neue Spielfiguren zu losen.</div> 
+</div>
+    
+    
+<div class="beschreibung2">
+<div class="klappe"><span style="cursor:pointer;" onclick="document.getElementById('text4').style.display='block';document.getElementById('an4').style.display='none';document.getElementById('zu4').style.display='block'" id="an4" style="display: block">WELCHE SPIELFIGUREN GIBT ES?</span> 
+<span onclick="document.getElementById('text4').style.display='none';document.getElementById('an4').style.display='block';document.getElementById('zu4').style.display='none'" id="zu4" style="display: none;cursor:pointer">WELCHE SPIELFIGUREN GIBT ES?</span></div> 
+<div id="text4" style="display: none; margin-left:50px; margin-right:50px; margin-top:5px"><ul class="figuren"><li><strong>König:</strong> Der König ist das Ziel der gegnerischen Mannschaften. Seine Aufgabe ist mittels verstecken oder wegrennen von den Gegner nicht gefangen zu werden.</li><br>
+<li><strong>Bauer:</strong> Der Bauer muss den König vor den angreifenden Gegenspielern beschützen. Dabei versucht er die Angreifer abzuklatschen, welche daraufhin, je nach Spielfigur, entweder zurück in sein eigenes Spielfeld oder ganz zurück zur Basis müssen.</li><br>
+<li><strong>Läufer:</strong> Der Läufer hat die Aufgabe den gegnerischen König zu fangen. Wird er jedoch von den Beschützern des Königs gefangen, muss er zurück zu seinem eigenen König um wieder angreifen zu können.</li><br>
+<li><strong>Pferd:</strong> Das Pferd ist eine Fusion aus Bauer und Läufer. Somit darf angreifen und verteidigen.</li><br>
+<li><strong>Dame:</strong> Die Dame darf gleich wie das Pferd angreifen und verteidigen. Der Unterschied ist jedoch, dass wenn sie gefangen wird muss sie nicht ganz zurück zum König, sondern nur bis zum eigenen Spielfeld.</li><br></ul></div> 
+</div>
+    
+
+<div class="beschreibung2">
+<div class="klappe"><span style="cursor:pointer;" onclick="document.getElementById('text5').style.display='block';document.getElementById('an5').style.display='none';document.getElementById('zu5').style.display='block'" id="an5" style="display: block">WAS NÜTZT MIR DER FIGURENGENERATOR?</span> 
+<span onclick="document.getElementById('text5').style.display='none';document.getElementById('an5').style.display='block';document.getElementById('zu5').style.display='none'" id="zu5" style="display: none;cursor:pointer">WAS NÜTZT MIR DER FIGURENGENERATOR?</span></div> 
+<div id="text5" style="display: none; margin-left:50px; margin-right:50px; margin-top:5px">Mit dem speziell für das Spiel programmierten Figurengenerator können auf schnelle und einfache Weise die Spielfiguren ausgelost werden. Nach einmaliger Eingabe der Grundeinstellungen reicht das einfachen Drücken auf den Knopf „Ausgabe“ um jede Runde neu die Spielfiguren auszulosen.<br>
+<ul class="anleitung"><strong>Eingabe der Grundeinstellungen</strong>
+<li><strong>Schritt 1:</strong> Überlegen sie vor Spielbeginn als Einheit aller Teams wie die Aufteilung der Spielfiguren in den Teams sein sollte. Geben sie Ihre Überlegungen in die jeweiligen Felder unter den Spielfiguren ein und speichern sie Ihre Eingabe.</li><br> 
+<li><strong>Schritt 2:</strong> Klicken sie auf  „Eingabe“ und geben sie alle Namen Ihres Teams ein.</li><br>
+<li><strong>Schritt 3:</strong> Klicken sie auf „Ausgabe“ um das Ergebnis der Auslosung zu sehen.</li><br></ul></div> 
+</div>
+</body>
+
+</html>
